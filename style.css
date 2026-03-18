@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+:root {
+    --color-green: #b7cbbf;
+    --color-brown: #8c886f;
+    --color-pink: #f9a799;
+    --color-soft-orange: #f4bfad;
+    --header: #f5dabd;
+    --bg-base: #f7f0e7;
+}
+
+
+.section-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: var(--color-green);
+    margin-bottom: 20px;
+    
+}
+
+.section-divider {
+    height: 1px;
+    border: 0;
+    background: linear-gradient(to right, transparent, var(--color-brown), transparent);
+    margin: 3rem 0 2rem;
+}
+
+.section-divider-header {
+    height: 2px;
+    border: 0;
+    background: linear-gradient(to right, transparent, #ffffff, transparent);
+    margin: 3rem 0 2rem;
+}
+
+.header {
+    padding-bottom: 40px;
+    color: white;
+}
+
+/* Animación de deslizamiento para el carrusel */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#carruselProducto {
+    animation: slideInFromRight 0.8s ease-in-out forwards;
+}
+
+#carruselProducto.slide-out {
+    animation: slideOutToLeft 0.8s ease-in-out forwards;
+}
+
+/* Animación de desfile continuo para carrusel */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#inicio{
+    background-color: var(--bg-base);
+    background-image: linear-gradient(
+        135deg,
+        var(--bg-base) 0%,
+        var(--color-pink) 35%,
+        var(--color-soft-orange) 68%,
+        var(--header) 100%
+    );
+}
+
+body{
+    background-color: var(--bg-base);
+}
+
+#que-hacemos,
+#como-hacemos {
+    scroll-margin-top: 90px;
+}
