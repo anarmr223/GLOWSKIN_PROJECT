@@ -54,7 +54,7 @@
                         <div class="row">
                             <p class="section-title" id="que-hacemos"><strong>¿QUÉ HACEMOS?</strong></p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 d-flex align-items-center">
                             <!-- Reproductor de video -->
                             <video id="glowskinVideoPlayer" class="w-100 rounded-4 shadow-lg" autoplay muted
                                 playsinline>
@@ -63,15 +63,24 @@
                         </div>
                         <div class="col-md-8 d-flex align-items-center px-4 px-lg-5">
                             <div>
-                                <p>Sabemos que no hay nada más <strong>frustrante</strong> que comprar un producto recomendado por una
-                                    tendencia y despertar al día siguiente con una <strong>reacción alérgica</strong>,
-                                    rojeces o brotes inesperados. La mayoría de las personas que no tienen conocimientos
-                                    avanzados en cosmetología compran a ciegas, sin saber que ciertos ingredientes,
-                                    aunque sean "naturales", pueden ser altamente irritantes para su tipo de piel
-                                    específico.
+                                <p>Sabemos que no hay nada más <strong>frustrante</strong> que invertir tiempo en buscar y comprar productos para el cuidado de la piel,
+                                    para que al final no resulten efectivos o, peor aún, causen reacciones adversas.
+                                    Sabemos que adentrarse en el mundo de la cosmetología puede ser abrumador, con términos complicados y una cantidad infinita de opciones que prometen resultados milagrosos pero que a menudo son bombas de humo.
+                                    <br><br> La mayoría de las personas que no tienen conocimientos
+                                    avanzados compran a ciegas, sin saber si realmente si lo que están escogiendo es una buena opción para su tipo de piel y el objetivo que desean alcanzar.
                                     Nuestra aplicación nace para ser el puente entre la <strong>ciencia química</strong> y tu rutina diaria.
                                     <br> <strong>Tu seguridad es nuestra prioridad.</strong><br>
-                                    <br>Nuestra tecnología no se limita a decirte qué es "bueno" o "malo" de forma genérica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="section-divider">
+                <div class="col-md-12">
+                    <p class="section-title text-end" id="como-hacemos"><strong>¿CÓMO LO HACEMOS?</strong></p>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p><br>Nuestra tecnología no se limita a decirte qué es "bueno" o "malo" de forma genérica.
                                     El verdadero valor de nuestra plataforma es la <strong>personalización extrema</strong>:
                                 </p>
 
@@ -88,22 +97,7 @@
                                     <li><strong style="color: var(--color-brown);">Educación sin Complicaciones:</strong> No solo te decimos qué usar, sino cómo y cuándo. Te
                                     enseñamos el orden correcto de aplicación para que cada gota de producto sea efectiva y,
                                     sobre todo, <strong>segura</strong>.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="section-divider">
-                <div class="col-md-12">
-                    <p class="section-title text-end" id="como-hacemos"><strong>¿CÓMO LO HACEMOS?</strong></p>
-                    <div class="row">
-                        <div class="col-md-7">
-                            <p>En GLOWSKIN, nos dedicamos a crear productos de cuidado de la piel innovadores y
-                                efectivos
-                                que realzan tu belleza natural.
-                                Nuestra misión es proporcionar soluciones de alta calidad que nutran, protejan y
-                                transformen
-                                tu piel, ayudándote a sentirte radiante y segura en tu propia piel.</p>
+                                </ul></p>
                         </div>
                         <div class="col-md-5 d-flex align-items-center justify-content-center">
                             <div id="carouselContainer"
@@ -123,7 +117,7 @@
     <!-- Script para reproducir videos de forma recursiva (playlist) -->
     <script>
         const videoPlayer = document.getElementById('glowskinVideoPlayer');
-        const playlist = ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4', 'video5.mp4']; // Reemplaza esto con los nombres de tus videos
+        const playlist = ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4']; // Reemplaza esto con los nombres de tus videos
         const path = 'utils/videos/';
         let currentVideoIndex = 0;
 
