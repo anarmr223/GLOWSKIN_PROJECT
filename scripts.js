@@ -84,3 +84,16 @@ function fotosAutoScroll() {
     // Iniciar desplazamiento automático
     autoScroll();
 }
+
+
+function verMasModal() {
+    document.querySelectorAll('.ver-mas').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            var imgSrc = this.getAttribute('data-img');
+            document.getElementById('imgExtra').src = imgSrc;
+            var modal = new bootstrap.Modal(document.getElementById('modalImagenExtra'));
+            modal.show();
+        });
+    });
+}

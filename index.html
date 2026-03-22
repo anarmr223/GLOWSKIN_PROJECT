@@ -8,8 +8,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
+    <!-- Fuente caligráfica antigua -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <!-- CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,21 +21,21 @@
 
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
-        <a class="navbar-brand" href="#inicio">GLOWSKIN</a>
+        <a class="navbar-brand ms-3" href="#inicio">GLOWSKIN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse me-3" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#que-hacemos">¿Qué hacemos?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#como-hacemos">¿Cómo hacemos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#favoritos">Nuestros favoritos</a>
                 </li>
             </ul>
         </div>
@@ -43,9 +46,9 @@
     <!-- Contenedor principal sin padding (p-0) para que la imagen toque los bordes -->
 
     <!-- Sección de la imagen con Flexbox para centrar el texto -->
-    <div class="header d-flex flex-column text-center">
+    <div class="header d-flex flex-column text-center" id="inicio">
         <h1 class="display-1 fw-bold">GLOWSKIN</h1>
-        <p class="fs-4">Bienvenido a nuestra web!</p>
+        <p class="fs-4">¡Bienvenido a nuestra web!</p>
     </div>
     </div>
     <div class="container-lg">
@@ -67,7 +70,7 @@
                             complicados y una cantidad infinita de opciones que prometen resultados milagrosos pero
                             que a menudo son bombas de humo.
                             <br><br> La mayoría de las personas que no tienen conocimientos
-                            avanzados compran a ciegas, sin saber si realmente si lo que están escogiendo es una
+                            avanzados compran a ciegas, sin saber si realmente lo que están escogiendo es una
                             buena opción para su tipo de piel y el objetivo que desean alcanzar.
                             Nuestra aplicación nace para ser el puente entre la <strong>ciencia química</strong> y
                             tu rutina diaria.
@@ -86,20 +89,20 @@
                         </p>
 
                         <ul style="margin-top: 1rem;">
-                            <li><strong style="color: var(--color-brown);">Análisis de Ingredientes en Tiempo
+                            <li><strong>Análisis de Ingredientes en Tiempo
                                     Real:</strong> Olvida las etiquetas indescifrables.
                                 Escanea cualquier producto y nuestra base de datos desglosará cada componente,
                                 alertándote de forma inmediata si contiene <strong>alérgenos comunes</strong> o
                                 sustancias que no
                                 reaccionan bien con tu historial personal.</li>
 
-                            <li><strong style="color: var(--color-brown);">Guía para Necesidades Especiales:</strong> Si
+                            <li><strong>Guía para Necesidades Especiales:</strong> Si
                                 sufres de <strong>rosácea</strong>, <strong>dermatitis atópica</strong> o <strong>acné
                                     quístico</strong>, nuestra app actúa como un filtro inteligente. Te ayudamos a
                                 identificar qué
                                 activos calmarán tu piel y cuáles podrían desencadenar una crisis.</li>
 
-                            <li><strong style="color: var(--color-brown);">Educación sin Complicaciones:</strong> No
+                            <li><strong>Educación sin Complicaciones:</strong> No
                                 solo te decimos qué usar, sino cómo y cuándo. Te
                                 enseñamos el orden correcto de aplicación para que cada gota de producto sea efectiva y,
                                 sobre todo, <strong>segura</strong>.</li>
@@ -124,9 +127,11 @@
                                 <div class="card h-100">
                                     <img src="utils/img/clarins.png" class="card-img-top" alt="Clarins">
                                     <div class="card-body text-center">
-                                        <a href="#" class="ver-mas" data-img="utils/img/prod1.png">Ver más</a>
+                                        <a href="#" class="ver-mas" data-img="utils/img/clarins_analisis.png">Ver
+                                            más</a>
                                         <br>
-                                        <a href="https://www.clarins.es/double-serum---el-concentrado-antiedad-mas-potente-/CS00928365.html" target="_blank" class="comprar">Comprar</a>
+                                        <a href="https://www.clarins.es/double-serum---el-concentrado-antiedad-mas-potente-/CS00928365.html"
+                                            target="_blank" class="comprar">Comprar</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,9 +139,11 @@
                                 <div class="card h-100">
                                     <img src="utils/img/estee-lauder.png" class="card-img-top" alt="Estée Lauder">
                                     <div class="card-body text-center">
-                                        <a href="#" class="ver-mas" data-img="utils/img/prod2.png">Ver más</a>
+                                        <a href="#" class="ver-mas" data-img="utils/img/estee-lauder_analisis.png">Ver
+                                            más</a>
                                         <br>
-                                        <a href="https://www.esteelauder.es/product/advanced-night-repair-complejo-de-serum-multi-restaurador-sincronizado" target="_blank" class="comprar">Comprar</a>
+                                        <a href="https://www.esteelauder.es/product/advanced-night-repair-complejo-de-serum-multi-restaurador-sincronizado"
+                                            target="_blank" class="comprar">Comprar</a>
 
                                     </div>
                                 </div>
@@ -145,9 +152,10 @@
                                 <div class="card h-100">
                                     <img src="utils/img/nezeni.png" class="card-img-top" alt="Nezeni">
                                     <div class="card-body text-center">
-                                        <a href="#" class="ver-mas" data-img="utils/img/prod3.png">Ver más</a>
+                                        <a href="#" class="ver-mas" data-img="utils/img/nezeni_analisis.png">Ver más</a>
                                         <br>
-                                        <a href="https://nezeni.com/producto/serum-antiarrugas-tp/" target="_blank" class="comprar">Comprar</a>
+                                        <a href="https://nezeni.com/producto/serum-antiarrugas-tp/" target="_blank"
+                                            class="comprar">Comprar</a>
                                     </div>
                                 </div>
                             </div>
@@ -155,33 +163,27 @@
                                 <div class="card h-100">
                                     <img src="utils/img/prevent.png" class="card-img-top" alt="Prevent">
                                     <div class="card-body text-center">
-                                        <a href="#" class="ver-mas" data-img="utils/img/prod4.png">Ver más</a>
+                                        <a href="#" class="ver-mas" data-img="utils/img/prevent_analisis.png">Ver
+                                            más</a>
                                         <br>
-                                        <a href="https://delipluscosmetic.com/product/tratamiento-facial-potenciador-proteoglicanos-prevent-age-skin-deliplus-todo-tipo-de-pieles-frasco-30-ml/" target="_blank" class="comprar">Comprar</a>
+                                        <a href="https://delipluscosmetic.com/product/tratamiento-facial-potenciador-proteoglicanos-prevent-age-skin-deliplus-todo-tipo-de-pieles-frasco-30-ml/"
+                                            target="_blank" class="comprar">Comprar</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Modal para mostrar la imagen extra -->
                         <div class="modal fade" id="modalImagenExtra" tabindex="-1" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <div class="modal-body text-center">
-                                <img id="imgExtra" src="" alt="Imagen extra" class="img-fluid rounded-4">
-                              </div>
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <img id="imgExtra" src="" alt="Imagen extra" class="img-fluid rounded-4">
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <script>
-                        document.querySelectorAll('.ver-mas').forEach(function(link) {
-                          link.addEventListener('click', function(e) {
-                            e.preventDefault();
-                            var imgSrc = this.getAttribute('data-img');
-                            document.getElementById('imgExtra').src = imgSrc;
-                            var modal = new bootstrap.Modal(document.getElementById('modalImagenExtra'));
-                            modal.show();
-                          });
-                        });
+                            
                         </script>
                     </div>
                 </div>
@@ -201,6 +203,7 @@
             navbarTransition();
             videoAutoplay();
             fotosAutoScroll();
+            verMasModal();
         </script>
 </body>
 
