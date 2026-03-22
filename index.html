@@ -6,6 +6,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GLOWSKIN</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
     <!-- CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -36,7 +40,8 @@
                 </div>
             </div>
         </nav>
-        <hr class="section-divider-header">
+        </div>
+
 
 
         <!-- Contenedor principal sin padding (p-0) para que la imagen toque los bordes -->
@@ -47,63 +52,68 @@
             <p class="fs-4">Welcome to GLOWSKIN!</p>
         </div>
     </div>
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row ">
-                        <div class="row">
-                            <p class="section-title" id="que-hacemos"><strong>¿QUÉ HACEMOS?</strong></p>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center">
-                            <!-- Reproductor de video -->
-                            <video id="glowskinVideoPlayer" class="w-100 rounded-4 shadow-lg" autoplay muted
-                                playsinline>
-                                Tu navegador no soporta la reproducción de video.
-                            </video>
-                        </div>
-                        <div class="col-md-8 d-flex align-items-center px-4 px-lg-5">
-                            <div>
-                                <p>Sabemos que no hay nada más <strong>frustrante</strong> que invertir tiempo en buscar y comprar productos para el cuidado de la piel,
-                                    para que al final no resulten efectivos o, peor aún, causen reacciones adversas.
-                                    Sabemos que adentrarse en el mundo de la cosmetología puede ser abrumador, con términos complicados y una cantidad infinita de opciones que prometen resultados milagrosos pero que a menudo son bombas de humo.
-                                    <br><br> La mayoría de las personas que no tienen conocimientos
-                                    avanzados compran a ciegas, sin saber si realmente si lo que están escogiendo es una buena opción para su tipo de piel y el objetivo que desean alcanzar.
-                                    Nuestra aplicación nace para ser el puente entre la <strong>ciencia química</strong> y tu rutina diaria.
-                                    <br> <strong>Tu seguridad es nuestra prioridad.</strong><br>
-                                </p>
-                            </div>
-                        </div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="section-title" id="que-hacemos"><strong>¿QUÉ HACEMOS?</strong></p>
+                <div class="row ">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <!-- Reproductor de video -->
+                        <video id="glowskinVideoPlayer" class="w-100 rounded-4 shadow-lg" autoplay muted playsinline>
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+                    <div class="texto-info col-md-8 d-flex align-items-center px-4 px-lg-5">
+                        <p>Sabemos que no hay nada más <strong>frustrante</strong> que invertir tiempo en buscar y
+                            comprar productos para el cuidado de la piel,
+                            para que al final no resulten efectivos o, peor aún, causen reacciones adversas.
+                            Sabemos que adentrarse en el mundo de la cosmetología puede ser abrumador, con términos
+                            complicados y una cantidad infinita de opciones que prometen resultados milagrosos pero
+                            que a menudo son bombas de humo.
+                            <br><br> La mayoría de las personas que no tienen conocimientos
+                            avanzados compran a ciegas, sin saber si realmente si lo que están escogiendo es una
+                            buena opción para su tipo de piel y el objetivo que desean alcanzar.
+                            Nuestra aplicación nace para ser el puente entre la <strong>ciencia química</strong> y
+                            tu rutina diaria.
+                            <br> <strong>Tu seguridad es nuestra prioridad.</strong><br>
+                        </p>
                     </div>
                 </div>
-                <hr class="section-divider">
-                <div class="col-md-12">
-                    <p class="section-title text-end" id="como-hacemos"><strong>¿CÓMO LO HACEMOS?</strong></p>
-                    <div class="row">
-                        <div class="col-md-7">
-                            <p><br>Nuestra tecnología no se limita a decirte qué es "bueno" o "malo" de forma genérica.
-                                    El verdadero valor de nuestra plataforma es la <strong>personalización extrema</strong>:
-                                </p>
+            </div>
+            <hr class="section-divider">
+            <div class="col-md-12">
+                <p class="section-title text-end" id="como-hacemos"><strong>¿CÓMO LO HACEMOS?</strong></p>
+                <div class="row">
+                    <div class=" texto-info col-md-7">
+                        <p><br>Nuestra tecnología no se limita a decirte qué es "bueno" o "malo" de forma genérica.
+                            El verdadero valor de nuestra plataforma es la <strong>personalización extrema</strong>:
+                        </p>
 
-                                <ul style="margin-top: 1rem;">
-                                    <li><strong style="color: var(--color-brown);">Análisis de Ingredientes en Tiempo Real:</strong> Olvida las etiquetas indescifrables.
-                                    Escanea cualquier producto y nuestra base de datos desglosará cada componente,
-                                    alertándote de forma inmediata si contiene <strong>alérgenos comunes</strong> o sustancias que no
-                                    reaccionan bien con tu historial personal.</li>
+                        <ul style="margin-top: 1rem;">
+                            <li><strong style="color: var(--color-brown);">Análisis de Ingredientes en Tiempo
+                                    Real:</strong> Olvida las etiquetas indescifrables.
+                                Escanea cualquier producto y nuestra base de datos desglosará cada componente,
+                                alertándote de forma inmediata si contiene <strong>alérgenos comunes</strong> o
+                                sustancias que no
+                                reaccionan bien con tu historial personal.</li>
 
-                                    <li><strong style="color: var(--color-brown);">Guía para Necesidades Especiales:</strong> Si sufres de <strong>rosácea</strong>, <strong>dermatitis atópica</strong> o <strong>acné
-                                    quístico</strong>, nuestra app actúa como un filtro inteligente. Te ayudamos a identificar qué
-                                    activos calmarán tu piel y cuáles podrían desencadenar una crisis.</li>
+                            <li><strong style="color: var(--color-brown);">Guía para Necesidades Especiales:</strong> Si
+                                sufres de <strong>rosácea</strong>, <strong>dermatitis atópica</strong> o <strong>acné
+                                    quístico</strong>, nuestra app actúa como un filtro inteligente. Te ayudamos a
+                                identificar qué
+                                activos calmarán tu piel y cuáles podrían desencadenar una crisis.</li>
 
-                                    <li><strong style="color: var(--color-brown);">Educación sin Complicaciones:</strong> No solo te decimos qué usar, sino cómo y cuándo. Te
-                                    enseñamos el orden correcto de aplicación para que cada gota de producto sea efectiva y,
-                                    sobre todo, <strong>segura</strong>.</li>
-                                </ul></p>
-                        </div>
-                        <div class="col-md-5 d-flex align-items-center justify-content-center">
-                            <div id="carouselContainer"
-                                style="overflow: hidden; border-radius: 1rem; width: 90%; height: 300px;">
-                                <div id="carouselTrack" style="display: flex; gap: 15px; padding: 0;"></div>
-                            </div>
+                            <li><strong style="color: var(--color-brown);">Educación sin Complicaciones:</strong> No
+                                solo te decimos qué usar, sino cómo y cuándo. Te
+                                enseñamos el orden correcto de aplicación para que cada gota de producto sea efectiva y,
+                                sobre todo, <strong>segura</strong>.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center justify-content-center">
+                        <div id="carouselContainer"
+                            style="overflow: hidden; border-radius: 1rem; width: 90%; height: 300px;">
+                            <div id="carouselTrack" style="display: flex; gap: 15px; padding: 0;"></div>
                         </div>
                     </div>
                 </div>
@@ -116,72 +126,12 @@
 
     <!-- Script para reproducir videos de forma recursiva (playlist) -->
     <script>
-        const videoPlayer = document.getElementById('glowskinVideoPlayer');
-        const playlist = ['video1.mp4', 'video2.mp4', 'video3.mp4', 'video4.mp4']; // Reemplaza esto con los nombres de tus videos
-        const path = 'utils/videos/';
-        let currentVideoIndex = 0;
 
-        // Asignar la ruta del primer video al iniciar
-        videoPlayer.src = path + playlist[currentVideoIndex];
-
-        videoPlayer.addEventListener('ended', () => {
-            currentVideoIndex++;
-            if (currentVideoIndex >= playlist.length) {
-                currentVideoIndex = 0; // Vuelve al primer video cuando termina la lista
-            }
-            videoPlayer.src = path + playlist[currentVideoIndex];
-            videoPlayer.play();
-        });
     </script>
     <!-- Carrusel automático de desplazamiento horizontal -->
     <script>
-        const productImages = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png']; // Ajusta según tus imágenes
-        const imagePath = 'utils/img/';
-        const carouselTrack = document.getElementById('carouselTrack');
-        const carouselContainer = document.getElementById('carouselContainer');
 
-        const imageWidth = 300; // px
-        const gap = 15; // px
-        const scrollSpeed = 0.2; // px por frame (ajusta para más/menos velocidad)
-        const containerWidth = 500; // px (ancho visible)
 
-        // Crear función para generar imágenes
-        function createImageElement(src) {
-            const img = document.createElement('img');
-            img.src = imagePath + src;
-            img.style.minWidth = imageWidth + 'px';
-            img.style.height = '100%';
-            img.style.objectFit = 'cover';
-            img.style.borderRadius = '0.5rem';
-            img.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-            return img;
-        }
-
-        // Agregar imágenes inicial (duplicadas para efecto infinito)
-        [...productImages, ...productImages].forEach(img => {
-            carouselTrack.appendChild(createImageElement(img));
-        });
-
-        // Variable para controlar el desplazamiento
-        let scrollPosition = 0;
-
-        // Función de desplazamiento automático
-        function autoScroll() {
-            scrollPosition += scrollSpeed;
-            carouselContainer.scrollLeft = scrollPosition;
-
-            // Cuando llega al final, resetear al inicio (efecto infinito)
-            const maxScroll = carouselTrack.scrollWidth / 2;
-            if (scrollPosition >= maxScroll) {
-                scrollPosition = 0;
-                carouselContainer.scrollLeft = 0;
-            }
-
-            requestAnimationFrame(autoScroll);
-        }
-
-        // Iniciar desplazamiento automático
-        autoScroll();
     </script>
 
 
@@ -189,9 +139,15 @@
     <footer>
         <br>
         <br>
-         <p class="text-center">© 2024 GLOWSKIN. All rights reserved.</p>
+        <p class="text-center">© 2024 GLOWSKIN. All rights reserved.</p>
     </footer>
 
+    <script src="scripts.js"></script>
+    <script>
+        navbarTransition();
+        videoAutoplay();
+        fotosAutoScroll();
+    </script>
 </body>
 
 </html>
