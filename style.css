@@ -2,18 +2,26 @@
 
 :root {
     --bs-body-font-family: 'Arimo', sans-serif;
-    --color-green: #b7cbbf;
+    --color-green: #6fa284;
     --color-brown: #8c886f;
     --color-pink: #f9a799;
     --color-soft-orange: #f4bfad;
     --header: #f5dabd;
     --bg-base: #f7f0e7;
+    --bg-white: #fffcf8;
 }
 
 .texto-info p {
     font-size: 1.2em;
     line-height: 1.6;
     color: black;
+}
+
+.a{
+    color: var(--color-green);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
 }
 
 strong{
@@ -55,7 +63,7 @@ strong{
 
 .header {
     padding-bottom: 40px;
-    color: white;
+    color: var(--color-brown);
     font-family: "Edu AU VIC WA NT Guides", cursive;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -103,22 +111,36 @@ strong{
     }
 }
 
-#inicio {
+.navbar {
     background-color: var(--bg-base);
     background-image: linear-gradient(135deg,
             var(--bg-base) 0%,
             var(--color-pink) 35%,
-            var(--color-soft-orange) 68%,
-            var(--header) 100%);
-    z-index: 1030
+            var(--color-soft-orange) 68%);
+    z-index: 1030;
+    border-radius: 24px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+}
+
+.sticky-top {
+    top: 0.2rem;
 }
 
 body {
-    background-color: var(--bg-base);
+    background-color: var(--bg-white);
     font-family: "SN Pro", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.container-fluid, .container-lg {
+    background-color: var(--bg-base);
+    border-radius: 24px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+    padding: 1rem 1.5rem;
 }
 
 /* Ajuste responsivo para .texto-info */

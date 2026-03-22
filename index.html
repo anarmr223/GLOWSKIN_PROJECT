@@ -17,40 +17,36 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="inicio">
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#inicio">GLOWSKIN</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#que-hacemos">¿Qué hacemos?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#como-hacemos">¿Cómo hacemos?</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#inicio">GLOWSKIN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#que-hacemos">¿Qué hacemos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#como-hacemos">¿Cómo hacemos?</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
 
 
-        <!-- Contenedor principal sin padding (p-0) para que la imagen toque los bordes -->
+    <!-- Contenedor principal sin padding (p-0) para que la imagen toque los bordes -->
 
-        <!-- Sección de la imagen con Flexbox para centrar el texto -->
-        <div class="header d-flex flex-column text-center">
-            <h1 class="display-1 fw-bold">GLOWSKIN</h1>
-            <p class="fs-4">Welcome to GLOWSKIN!</p>
-        </div>
+    <!-- Sección de la imagen con Flexbox para centrar el texto -->
+    <div class="header d-flex flex-column text-center">
+        <h1 class="display-1 fw-bold">GLOWSKIN</h1>
+        <p class="fs-4">Bienvenido a nuestra web!</p>
+    </div>
     </div>
     <div class="container-lg">
         <div class="row">
@@ -118,36 +114,94 @@
                     </div>
                 </div>
             </div>
+            <hr class="section-divider">
+            <div class="col-md-12">
+                <p class="section-title" id="favoritos"><strong>NUESTROS FAVORITOS</strong></p>
+                <div class="row">
+                    <div class=" texto-info col-md-12">
+                        <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="utils/img/clarins.png" class="card-img-top" alt="Clarins">
+                                    <div class="card-body text-center">
+                                        <a href="#" class="ver-mas" data-img="utils/img/prod1.png">Ver más</a>
+                                        <br>
+                                        <a href="https://www.clarins.es/double-serum---el-concentrado-antiedad-mas-potente-/CS00928365.html" target="_blank" class="comprar">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="utils/img/estee-lauder.png" class="card-img-top" alt="Estée Lauder">
+                                    <div class="card-body text-center">
+                                        <a href="#" class="ver-mas" data-img="utils/img/prod2.png">Ver más</a>
+                                        <br>
+                                        <a href="https://www.esteelauder.es/product/advanced-night-repair-complejo-de-serum-multi-restaurador-sincronizado" target="_blank" class="comprar">Comprar</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="utils/img/nezeni.png" class="card-img-top" alt="Nezeni">
+                                    <div class="card-body text-center">
+                                        <a href="#" class="ver-mas" data-img="utils/img/prod3.png">Ver más</a>
+                                        <br>
+                                        <a href="https://nezeni.com/producto/serum-antiarrugas-tp/" target="_blank" class="comprar">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="utils/img/prevent.png" class="card-img-top" alt="Prevent">
+                                    <div class="card-body text-center">
+                                        <a href="#" class="ver-mas" data-img="utils/img/prod4.png">Ver más</a>
+                                        <br>
+                                        <a href="https://delipluscosmetic.com/product/tratamiento-facial-potenciador-proteoglicanos-prevent-age-skin-deliplus-todo-tipo-de-pieles-frasco-30-ml/" target="_blank" class="comprar">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal para mostrar la imagen extra -->
+                        <div class="modal fade" id="modalImagenExtra" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-body text-center">
+                                <img id="imgExtra" src="" alt="Imagen extra" class="img-fluid rounded-4">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <script>
+                        document.querySelectorAll('.ver-mas').forEach(function(link) {
+                          link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            var imgSrc = this.getAttribute('data-img');
+                            document.getElementById('imgExtra').src = imgSrc;
+                            var modal = new bootstrap.Modal(document.getElementById('modalImagenExtra'));
+                            modal.show();
+                          });
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JS de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <footer>
+            <br>
+            <br>
+            <p class="text-center">© 2024 GLOWSKIN. All rights reserved.</p>
+        </footer>
 
-    <!-- Script para reproducir videos de forma recursiva (playlist) -->
-    <script>
-
-    </script>
-    <!-- Carrusel automático de desplazamiento horizontal -->
-    <script>
-
-
-    </script>
-
-
-
-    <footer>
-        <br>
-        <br>
-        <p class="text-center">© 2024 GLOWSKIN. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-    <script>
-        navbarTransition();
-        videoAutoplay();
-        fotosAutoScroll();
-    </script>
+        <script src="scripts.js"></script>
+        <script>
+            navbarTransition();
+            videoAutoplay();
+            fotosAutoScroll();
+        </script>
 </body>
 
 </html>
