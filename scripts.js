@@ -1,7 +1,7 @@
 
 function navbarTransition() {
     window.addEventListener('scroll', function () {
-        const title = document.querySelector('.header'); // Cambia por tu clase real
+        const title = document.querySelector('.header');
         const scrollPos = window.scrollY;
 
         // Si el usuario bajó más de 50px, empezamos a quitar el título
@@ -41,10 +41,10 @@ function fotosAutoScroll() {
     const carouselTrack = document.getElementById('carouselTrack');
     const carouselContainer = document.getElementById('carouselContainer');
 
-    const imageWidth = 300; // px
-    const gap = 15; // px
-    const scrollSpeed = 0.2; // px por frame (ajusta para más/menos velocidad)
-    const containerWidth = 500; // px (ancho visible)
+    const imageWidth = 300; 
+    const gap = 15; 
+    const scrollSpeed = 0.1; // px por frame (ajusta para más/menos velocidad)
+    const containerWidth = 500;
 
     // Crear función para generar imágenes
     function createImageElement(src) {
